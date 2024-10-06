@@ -176,6 +176,17 @@ body{
     top: 0;
     right: 0;
 }
+.wrapper::after{
+    content: 'New!';
+    font-size: 15rem;
+    text-transform: uppercase;
+    color: #d8710a38;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 1.2em;
+    right: -.8em;
+
+}
 
 .nav__logo{
     width: 6em;
@@ -260,4 +271,83 @@ body{
     width: 100%;
 
   }
-.mockup__image
+.mockup__image{
+    max-width: 28em;
+    position: absolute;
+    z-index: 10;
+    right: 16%;
+
+}
+.mockup__image img{
+    filter: drop-shadow(1em 1em 1em rgba(0, 0, 0, 0.788));
+    transform: rotate(-10deg);
+
+}
+.mockup__texts{
+    max-width: 50em;
+    color: #fff;
+    position: absolute;
+    top: 10em;
+    left: 5em;
+
+
+}
+.mockup__title{
+    font-family: var(--font-caveat);
+    font-size: 11rem;
+    margin-bottom: .1em;
+}
+.mockup__paragrafo{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    width: 80%;
+
+}
+.mockup__Frappuccinos{
+    position: absolute;
+    bottom: 0;
+    left: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mockup__frappuccino{
+    width: 14em;
+    height: 12em;
+
+    /*border-radius:2em 2em 0 0;*/
+    border-radius: var(--bs-border-radius-xxl);
+    margin: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+
+
+}
+.mockup__frappuccino img{
+    width: 9em;
+    position: relative;
+    bottom: 4em;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+.mockup__frappuccino--pink{
+    background-color: var(--frapuccino-pink);
+}
+.mockup__frappuccino--green{
+    background-color: var(--frapuccino-green);
+}
+
+.mockup__frappuccino--red{
+    background-color: var(--frapuccino-red);
+}
+.mockup__frappuccino:hover img{
+    transform: translateY(-1.5em)scale(1.1);
+
+
+
+}
+
