@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="../css/style.css">
-<!-- Importar as fontes do Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-
- <!-- ICONS CDN FONTAWESOME -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
- integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="nav">
-                <div class="nav__logo">
-                    <a href="#"><img src="../images_homapage/starbucks-logo.png" alt="logo"></a>
+<html lang="pt-BR"> <!-- Adicionei o atributo lang -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação</title> <!-- Adicionei um título significativo -->
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="nav">
+            <div class="nav__logo">
+                <a href="#"><img src="../images_homapage/starbucks-logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="#">Home</a></li>
+                    <li class="nav__link"><a href="#">Contact</a></li>
+                    <li class="nav__link"><a href="#">Menu</a></li>
+                    <li class="nav__link nav__link--findstore">
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Find A Store</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__auth">
+                    <a href="#">Sign In</a>
+                    <a href="#">Join Now</a>
                 </div>
-                <nav>
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="#">Home</a></li>
-                        <li class="nav__link"><a href="#">Contact</a></li>
-                        <li class="nav__link"><a href="#">Menu</a></li>
-                        <li class="nav__link nav__link--findstore">
-                            <a href="#">
-                              <i class="fa-solid fa-location-dot"></i>
-                              <span>Find A Store</span>
-                            </a>
-                          </li>
-                        
-                    </ul>
-                    <div class="navbar__auth">
-                        <a href="#" class="sign-in">Sign In</a>
-                        <a href="#">Join Now</a>
-                      </div>
-                </nav>
-            </header>
-        </div>
-
-    </body>
+            </nav>
+        </header>
+    </div>
+</body>
 </html>
