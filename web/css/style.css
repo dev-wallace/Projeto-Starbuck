@@ -221,6 +221,7 @@ body{
     color: var(--bg-color);
 }
 .navbar__auth {
+    bottom: 10px;
     position: absolute;
     right: 0;
     display: flex; /* Exibe os links de autenticação em linha */
@@ -322,10 +323,10 @@ body{
     justify-content: space-between;
 
 }
-.mockup__frappuccino{
+ /*.mockup__frappuccino{
     width: 14em;
     height: 12em;
-    /*border-radius:2em 2em 0 0;*/
+   border-radius:2em 2em 0 0;
     border-radius: var(--bs-border-radius-xxl);
     margin: 0.2em;
     display: flex;
@@ -343,7 +344,7 @@ body{
 
 .mockup__frappuccino--red{
     background-color: var(--frapuccino-red);
-}
+}*/
 .mockup__frappuccino:hover img{
     transform: translateY(-1.5em)scale(1.1);
 
