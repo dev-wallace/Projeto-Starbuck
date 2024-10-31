@@ -419,7 +419,7 @@ body{
 
 .icon-top-left {
     position: absolute;
-    top: -62px;
+    top: -22px;
     left: -20px;
     width: 43px;
     height: auto;
@@ -427,7 +427,7 @@ body{
 
 .icon-bottom-right {
     position: absolute;
-    bottom: -50px;
+    bottom: -0px;
     right: 10px;
     width: 43px; /* largura intrínseca */
     height: auto; 
@@ -455,11 +455,11 @@ body{
 .close-btn:hover {
     background-color: #555;
 }
-/* Oculta o popup inicialmente  */
+/* Oculta o popup inicialmente  
 .popup-hidden {
     display: none;
 }
-    
+    */
 
     .card-login {
         position: relative;
