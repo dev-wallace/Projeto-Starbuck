@@ -27,7 +27,7 @@
                 </ul>
                 <div class="navbar__auth">
                     <button id="signInBtn" class="sign-in">Sign In</button>
-                    <a href="#">Join Now</a>
+                    <a id="joinNowBtn" href="#">Join Now</a>
                     <a href="#" id="findStoreBtn">
                         <i class="fa-solid fa-location-dot"></i>
                         <span>Find A Store</span>
@@ -40,23 +40,24 @@
                 <h2 class="mockup__title">Frappuccino!</h2>
                 <p class="mockup__paragrafo">Impulsione sua produtividade e eleve seu humor com um copo de Starbucks pela manhã.
                     Deixe o aroma do nosso café inspirar sua rotina e transforme suas manhãs em momentos especiais.</p>
-                    <div class="social_midias">
-                        <div class="social_midia">
-                            <a href="#"><img src="images_homapage/facebook.png" alt="Facebook"></a>
-                        </div>
-                        <div class="social_midia">
-                            <a href="#"><img src="images_homapage/instagram.png" alt="Instagram"></a>
-                        </div>
-                        <div class="social_midia">
-                            <a href="#"><img src="images_homapage/twitter.png" alt="Twitter"></a>
-                        </div>
-                    </div> 
+                <div class="social_midias">
+                    <div class="social_midia">
+                        <a href="#"><img src="images_homapage/facebook.png" alt="Facebook"></a>
+                    </div>
+                    <div class="social_midia">
+                        <a href="#"><img src="images_homapage/instagram.png" alt="Instagram"></a>
+                    </div>
+                    <div class="social_midia">
+                        <a href="#"><img src="images_homapage/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div> 
             </div>
             <div class="mockup__image"><img src="images_homapage/frappuccino.png" alt="Frappuccino"></div>
         </div>
 
+        <div id="overlay" class="overlay"></div>
         <!-- Popup Container - Oculto inicialmente -->
-        <div class="cdk-overlay-pane popup-hidden" id="locationPopup">
+        <div class="cdk-overlay-pane" id="locationPopup">
             <div class="mat-dialog-container">
                 <div class="gps-alert-box">
                     <!-- Ícones decorativos fixos nos cantos -->
@@ -65,49 +66,80 @@
                     
                     <div class="card-remove-wrapper2">
                         <form action="#" method="post"> 
-                            
                             <div class="input-box">
-                                <span class="icon"><ion-icon name="name"></ion-icon></span>
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
                                 <input type="text" id="name" name="name" required>
-                                <label for="name">Nome</label>
+                                <label for="name">Name</label>
                             </div>
 
                             <div class="input-box">
-                                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                                <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
                                 <input type="text" id="usuario" name="user" required>
-                                <label for="usuario">Usuário</label>
+                                <label for="usuario">User</label>
                             </div>
                             
                             <div class="input-box">
-                                <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
+                                <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
                                 <input type="password" id="senha" name="password" required>
-                                <label for="senha">Senha</label>
+                                <label for="senha">Password</label>
                             </div>
                             
-                            
-                            
-                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn">Register</button>
             
                             <div class="remember">
                                 <label><input type="checkbox">Remember me</label>
-                                <a href="#">Forgot Password?</a>
-                            </div>
-            
-                            <div class="login-registeter">
-                                <p>Don't have an account?<a href="../web/paginas/cadastrar_usuario.jsp" class="register-link">Register</a></p>
                             </div>
                         </form>
                     </div>
-                        <p class="text-center">
-                            Por favor, ative o serviço de localização nas configurações do navegador para permitir que o Starbucks determine sua localização.
-                        </p>
-                        <div class="close">
-                            <button type="button" class="close-btn" id="closePopupBtn">Fechar</button>
-                        </div>
+                    <div class="close">
+                        <button type="button" class="close-btn" id="closePopupBtn">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+
+       
+        <div class="cdk-overlay-pane2" id="locationPopup2">
+            <div class="mat-dialog-container2">
+                <div class="gps-alert-box2">
+                    <!-- Ícones decorativos fixos nos cantos -->
+                    <img src="Group 566.svg" alt="Estrela" class="icon-top-left">
+                    <img src="Group45.svg" alt="Flor" class="icon-bottom-right">
+                    
+                    <div class="card-remove-wrapper3">
+                        <form action="#" method="post"> 
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="input-box2">
+                                <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                                <input type="text" id="usuario" name="user" required>
+                                <label for="usuario">User</label>
+                            </div>
+                            
+                            <div class="input-box2">
+                                <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                                <input type="password" id="senha" name="password" required>
+                                <label for="senha">Password</label>
+                            </div>
+                            
+                            <button type="submit" class="btn2">Register</button>
+            
+                            <div class="remember2">
+                                <label><input type="checkbox">Remember me</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="close2">
+                        <button type="button" class="close-btn2" id="closePopupBtn2">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="js/script.js"></script>

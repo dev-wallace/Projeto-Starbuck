@@ -1,14 +1,43 @@
-// Seleciona os elementos de botão e popup
-const signInBtn = document.getElementById("signInBtn");
+// Seleciona o overlay, popups e botões
+const overlay = document.getElementById("overlay");
 const locationPopup = document.getElementById("locationPopup");
+const locationPopup2 = document.getElementById("locationPopup2");
+const signInBtn = document.getElementById("signInBtn"); // Certifique-se de que este ID está correto
+const joinNowBtn = document.getElementById("joinNowBtn"); // Certifique-se de que este ID está correto
 const closePopupBtn = document.getElementById("closePopupBtn");
+const closePopupBtn2 = document.getElementById("closePopupBtn2");
 
-// Exibe o popup ao clicar no botão "Find A Store"
+// Exibe o popup e o overlay ao clicar no botão "Sign Up"
 signInBtn.addEventListener("click", () => {
-    locationPopup.classList.remove("popup-hidden");
+    locationPopup.classList.add("active");
+    overlay.classList.add("active");
 });
 
-// Oculta o popup ao clicar no botão "Fechar" dentro do popup
+// Exibe o popup e o overlay ao clicar no botão "Join Now"
+joinNowBtn.addEventListener("click", () => {
+    locationPopup2.classList.add("active");
+    overlay.classList.add("active");
+});
+
+// Oculta o popup e o overlay ao clicar no botão "Fechar"
 closePopupBtn.addEventListener("click", () => {
-    locationPopup.classList.add("popup-hidden");
+    locationPopup.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+// Oculta o popup e o overlay ao clicar no botão "Fechar2"
+closePopupBtn2.addEventListener("click", () => {
+    locationPopup2.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+// Fechar o popup ao clicar no overlay
+overlay.addEventListener("click", () => {
+    if (locationPopup.classList.contains("active")) {
+        locationPopup.classList.remove("active");
+    }
+    if (locationPopup2.classList.contains("active")) {
+        locationPopup2.classList.remove("active");
+    }
+    overlay.classList.remove("active");
 });
