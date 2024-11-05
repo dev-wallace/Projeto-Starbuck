@@ -364,46 +364,32 @@ body{
     position: relative;
 }
 
-.gps-alert-box {
-    position: relative;
-    padding: 20px;
-    text-align: center;
-}
 
-.icon-top-left {
-    position: absolute;
-    top: -33px;
-    left: -20px;
-    width: 43px;
-    height: auto;
-}
 
-.icon-bottom-right {
-    position: absolute;
-    bottom: -16px;
-    right: -17px;
-    width: 43px; 
-    height: auto; 
-}
 
-.text-center {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-}
+
 
 .close{
     margin-top: 16px;
 }
 
-.close-btn {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px 20px;
+.close-btn{
+    position: absolute;
+    top: -45px;
+    right: -20px; 
+    width: 43px;
+    height: auto;
+    color: var(--links-color);
+    font-weight: 500;
+    text-transform: uppercase;
     border: none;
-    width: 90px;
-    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    margin: 12px;
     cursor: pointer;
+    font-family: var(--font-sans-serif);
+   font-size: 14px;
 }
 
 /* Oculta o popup inicialmente 
@@ -560,29 +546,7 @@ body{
     pointer-events: auto; /* Ativa interações para capturar cliques */
 }
 
-.cdk-overlay-pane {
-    background-color: rgba(0, 0, 0, .75);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); /* Escondido inicialmente */
-    opacity: 0;
-    max-width: 80vw;
-    width: 400px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease, opacity 0.3s ease ;
-    pointer-events: none;
-    z-index: 1000;
-    transition-delay: .12s;
-    
-}
+
 .cdk-overlay-pane.active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -605,7 +569,7 @@ body{
 
 .icon-top-left {
     position: absolute;
-    top: -33px;
+    top: -44px;
     left: -20px;
     width: 43px;
     height: auto;
@@ -613,7 +577,7 @@ body{
 
 .icon-bottom-right {
     position: absolute;
-    bottom: -16px;
+    bottom: -33px;
     right: -17px;
     width: 43px; 
     height: auto; 
@@ -625,19 +589,7 @@ body{
     margin-bottom: 20px;
 }
 
-.close{
-    margin-top: 16px;
-}
 
-.close-btn {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    width: 90px;
-    border-radius: 30px;
-    cursor: pointer;
-}
 
 /* Oculta o popup inicialmente 
 .popup-hidden {
@@ -654,7 +606,7 @@ body{
     transform: translate(-50%, -50%) scale(0); 
     opacity: 0;
     max-width: 80vw;
-    width: 600px;
+    width: 400px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -690,15 +642,15 @@ body{
 
 .icon-top-left2 {
     position: absolute;
-    top: -33px;
-    left: -20px;
+    top: -43px;
+    left: -21px;
     width: 43px;
     height: auto;
 }
 
 .icon-bottom-right2 {
     position: absolute;
-    bottom: -16px;
+    bottom: -33px;
     right: -17px;
     width: 43px; 
     height: auto; 
@@ -715,16 +667,46 @@ body{
 }
 
 .close-btn2 {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px 20px;
+    position: absolute;
+    top: -45px;
+    right: -20px; 
+    width: 43px;
+    height: auto;
+    color: var(--links-color);
+    font-weight: 500;
+    text-transform: uppercase;
     border: none;
-    width: 90px;
-    border-radius: 30px;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    margin: 12px;
     cursor: pointer;
+    font-family: var(--font-sans-serif);
+   font-size: 14px;
 }
 
+.cdk-overlay-pane2 .form-box{
+    width: 100%;
+    padding: 5PX;
+    
 
+}
+.form-box h2 {
+    font-size: 2em;
+    color: var(--title-color); 
+    text-align: center;
+}
+.form-box2 h2 {
+    font-size: 2em;
+    color: var(--title-color); 
+    text-align: center;
+}
+.cdk-overlay-pane3 .form-box2{
+    width: 100%;
+    padding: 5PX;
+    
+
+}
 
     .card-login2 {
         position: relative;
@@ -798,22 +780,6 @@ body{
         border: 2px solid #f5f7fa; /* Borda quando focado */
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Glow neon */
     }
-    .remember2{
-        font-size: .9em;
-    
-        color: var(--bg-color);
-        font-weight: 500;
-        margin: 15px 0 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
-    }
-    .remember2 label input{
-        accent-color: var(--bg-color);
-        margin-right: 3px ;
-    
-    }
  
     .btn2{
         border: none;
@@ -829,26 +795,32 @@ body{
     
     }
     .btn2:hover{
-        transform: scale(1.05);
+        transform: scale(1.09);
     }
-    .login-registeter2{
+   
+    
+
+    .remember{
         font-size: .9em;
-        color: text;
-        text-align: center;
+        color: var(--links-color);
         font-weight: 500;
-        margin: 25px 0 10px;
-    
-    }
-    
-    .login-registeter2 p a {
-        color: var(--bg-color);
-        font-size: .9em;
-        font-weight: 600;
-        margin:2px;
+        margin: 15px 0 15px;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        text-decoration: none;
+       
+    }
+    .remember label input{
+        accent-color: var(--links-color);
+        margin-right: 4px ;
     
     }
-    .login-registeter2 p a:hover{
-        text-decoration: underline;
+    .remember a{
+        color: var(--links-color);
+        text-decoration: none;
     }
+    .remember a:hover{
+        text-decoration: underline;
+    
+    }
+ 
