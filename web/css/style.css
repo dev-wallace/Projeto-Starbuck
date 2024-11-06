@@ -826,4 +826,70 @@ body{
         text-decoration: underline;
     
     }
- 
+    
+    .modalConteiner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .alert-box {
+        position: relative;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .icon-top-left-Success {
+        position: absolute;
+        top: -62px;
+        left: -20px;
+        width: 43px;
+        height: auto;
+    }
+    
+    .icon-bottom-right-Success {
+        position: absolute;
+        bottom: -50px;
+        right: 10px;
+        width: 43px; /* largura intrínseca */
+        height: auto; 
+    }
+    
+    .text-center {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    
+    .modalSuccess.active{
+        transform: translate(-50%, -50%) scale(1); 
+    opacity: 1;
+    pointer-events: auto; 
+    }
+    .modalSuccess{
+        background-color: rgba(0, 0, 0, .75);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0); 
+        opacity: 0;
+        max-width: 80vw;
+        width: 400px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.4s ease, opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1000;
+        transition-delay: .12s;
+
+    }

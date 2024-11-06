@@ -2,11 +2,19 @@
 const overlay = document.getElementById("overlay");
 const locationPopup = document.getElementById("locationPopup");
 const locationPopup2 = document.getElementById("locationPopup2");
-const signInBtn = document.getElementById("signInBtn"); // Certifique-se de que este ID está correto
-const joinNowBtn = document.getElementById("joinNowBtn"); // Certifique-se de que este ID está correto
+const signInBtn = document.getElementById("signInBtn"); 
+const joinNowBtn = document.getElementById("joinNowBtn"); 
 const closePopupBtn = document.getElementById("closePopupBtn");
 const closePopupBtn2 = document.getElementById("closePopupBtn2");
+const registerLink = document.getElementById("registerLink"); 
 
+registerLink.addEventListener("click", () => {
+    // Fecha o popup de registro
+    locationPopup2.classList.remove("active");
+    // Abre o popup de "Sign In"
+    locationPopup.classList.add("active");
+    overlay.classList.add("active");
+});
 // Exibe o popup e o overlay ao clicar no botão "Sign Up"
 signInBtn.addEventListener("click", () => {
     locationPopup.classList.add("active");
@@ -41,3 +49,4 @@ overlay.addEventListener("click", () => {
     }
     overlay.classList.remove("active");
 });
+
