@@ -23,28 +23,40 @@
                     <li id="nav-link-users" class="nav__link"><a href="#">Usuarios <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="dropdown-users" class="dropdown_Usuarios">
                             <li class="nav__link__drop"><a data-modal="locationPopupRegister">Cadastrar</a></li>
+                            
+                            <li class="nav__link__drop"><a data-modal="locationPopupBuscar">Buscar</a></li>
 
-                            <li class="nav__link__drop"><a class="#">Buscar</a></li>
-                            <li class="nav__link__drop"><a class="#">Excluir</a></li>
-                            <li class="nav__link__drop"><a class="#">Listar</a></li>
+                            <li class="nav__link__drop"><a data-modal="locationPopupExcluir">Excluir</a></li>
+
+                           
+                            <li class="nav__link__drop"><a data-modal="locationPopupListar">Listar</a></li>
+
                           </ul>
                     </li>
                     
                     <li id="nav-link-products" class="nav__link"><a href="#">Produtos <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="dropdown-products" class="dropdown_Usuarios">
-                            <li class="nav__link__drop"><a class="#">Cadastrar</a></li>
-                            <li class="nav__link__drop"><a class="#">Buscar</a></li>
-                            <li class="nav__link__drop"><a class="#">Excluir</a></li>
-                            <li class="nav__link__drop"><a class="#">Listar</a></li>
+                            <li class="nav__link__drop"><a data-modal="produtoRegister">Cadastrar</a></li>
+                            
+                            <li class="nav__link__drop"><a data-modal="produtoBuscar">Buscar</a></li>
+
+                            <li class="nav__link__drop"><a data-modal="produtoExcluir">Excluir</a></li>
+
+                           
+                            <li class="nav__link__drop"><a data-modal="produtoListar">Listar</a></li>
                           </ul>
                     </li>
 
                     <li id="nav-link-orders" class="nav__link"><a href="#">Pedidos <i class="fa-solid fa-angle-down"></i></a>
                         <ul id="dropdown-orders" class="dropdown_Usuarios">
-                            <li class="nav__link__drop"><a class="#">Cadastrar</a></li>
-                            <li class="nav__link__drop"><a class="#">Buscar</a></li>
-                            <li class="nav__link__drop"><a class="#">Excluir</a></li>
-                            <li class="nav__link__drop"><a class="#">Listar</a></li>
+                            <li class="nav__link__drop"><a data-modal="pedidosRegister">Cadastrar</a></li>
+                            
+                            <li class="nav__link__drop"><a data-modal="pedidosBuscar">Buscar</a></li>
+
+                            <li class="nav__link__drop"><a data-modal="pedidosExcluir">Excluir</a></li>
+
+                           
+                            <li class="nav__link__drop"><a data-modal="pedidosListar">Listar</a></li>
                           </ul>
                     </li>
 
@@ -117,7 +129,7 @@
                 </div>
                 
                 <div class="card-remove-wrapper2">
-                    <form action="jsp/cadastrar.jsp" method="post" id="registerForm"> 
+                    <form action="../jsp/cadastrar.jsp" method="post" id="registerForm"> 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
                             <input type="text" id="name" name="name" required>
@@ -137,6 +149,387 @@
                         </div>
                         
                         <button type="submit" class="btn">Register</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cdk-overlay-pane modal" id="locationPopupBuscar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Buscar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/buscar.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="id" name="id" required>
+                            <label for="senha">ID</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Buscar</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cdk-overlay-pane modal" id="locationPopupExcluir">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Excluir</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/excluir.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="id" name="id" required>
+                            <label for="senha">Excluir</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Excluir</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cdk-overlay-pane modal" id="locationPopupListar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Listar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/listar.jsp" method="post" id="registerForm"> 
+                        
+                        <button type="submit" class="btn">Listar</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cdk-overlay-pane modal" id="produtoRegister">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Produto</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/cadastrar_produto.jsp" method="post" id="registerForm"> 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="user" required>
+                            <label for="usuario">Preco</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="password" required>
+                            <label for="senha">Preco unidade</label>
+                        </div>
+
+                        
+                        
+                        <button type="submit" class="btn">Register</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cdk-overlay-pane modal" id="produtoBuscar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Buscar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/buscar_produto.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="id" required>
+                            <label for="senha">ID</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Register</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cdk-overlay-pane modal" id="produtoExcluir">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Excluir</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/excluir_produto.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="id" required>
+                            <label for="senha">ID</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Excluir</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cdk-overlay-pane modal" id="produtoListar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Listar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/listar_produto.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        
+                        <button type="submit" class="btn">Listar Produtos</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cdk-overlay-pane modal" id="pedidosRegister">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Pedido</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/cadastrar_pedido.jsp" method="post" id="registerForm"> 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                            <input type="date" id="name" name="name" required>
+                            <label for="name">Data</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="user" required>
+                            <label for="usuario">Valor</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="password" required>
+                            <label for="senha">Descricao</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Register</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cdk-overlay-pane modal" id="pedidosBuscar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Buscar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/buscar_pedido.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="id" required>
+                            <label for="senha">ID</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Buscar</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="cdk-overlay-pane modal" id="pedidosExcluir">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Excluir</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/excluir_pedido.jsp" method="post" id="registerForm"> 
+                       
+
+                 
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="id" required>
+                            <label for="senha">ID</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Excluir</button>
+        
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cdk-overlay-pane modal" id="pedidosListar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Listar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/listar_pedido.jsp" method="post" id="registerForm"> 
+                        
+                        <button type="submit" class="btn">Listar Pedido</button>
         
                        
                     </form>

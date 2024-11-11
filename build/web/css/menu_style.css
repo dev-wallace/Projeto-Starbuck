@@ -101,7 +101,7 @@ header {
   height: 35px;
   border-radius: 30px;
   padding: 10px 30px;
-  background-color: var(--bg-color-);
+  background-color: var(--bg-color--);
   color: var(--bg-color-top);
   border: 1px solid var(--text-color-light);
   cursor: pointer;
@@ -338,3 +338,339 @@ img.logo {
   height: auto;
   cursor: pointer;
 }
+
+/* Estilização do submenu */
+.dropdown_Usuarios {
+  display: none; /* Oculta o submenu por padrão */
+  position: absolute;
+  top: 100%; /* Posiciona o submenu logo abaixo do item principal */
+  left: -20px;
+  width: 150px; 
+  background: rgba(255, 255, 255, 0.959);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 1rem; 
+  margin-top: 0.5rem; /* Espaço extra para separar o submenu do item principal */
+  z-index: 1000; 
+  cursor: pointer;
+  
+}
+
+
+
+.dropdown_Usuarios li {
+  cursor: pointer;
+  
+  padding: 8px 10px;
+}
+
+.dropdown_Usuarios li a {
+  color: #2b2525;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'SoDoSans_Semibold', Helvetica, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Estilização do submenu */
+.dropdown_products {
+  display: none; /* Oculta o submenu por padrão */
+  position: absolute;
+  top: 100%; /* Posiciona o submenu logo abaixo do item principal */
+  left: -20px;
+  width: 150px; 
+  background: rgba(255, 255, 255, 0.959);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 1rem; 
+  margin-top: 0.5rem; /* Espaço extra para separar o submenu do item principal */
+  z-index: 1000; 
+}
+
+.dropdown_products li {
+  
+  padding: 8px 10px;
+}
+
+.dropdown_products li a {
+  color: #2b2525;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'SoDoSans_Semibold', Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+
+#angle_down {
+  margin-left: 3px;
+}
+
+
+
+.cdk-overlay-pane{
+  background-color: rgba(0, 0, 0, .75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Escondido inicialmente */
+  opacity: 0;
+  max-width: 80vw;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, opacity 0.3s ease ;
+  pointer-events: none;
+  z-index: 1000;
+  transition-delay: .12s;
+  
+}
+.cdk-overlay-pane.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mat-dialog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+
+
+
+.close{
+  margin-top: 16px;
+}
+
+.close-btn{
+  position: absolute;
+  top: -45px;
+  right: -20px; 
+  width: 43px;
+  height: auto;
+  color: var(--links-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  margin: 12px;
+  cursor: pointer;
+  font-family: var(--font-sans-serif);
+ font-size: 14px;
+}
+
+/* Oculta o popup inicialmente 
+.popup-hidden {
+  display: none;
+ 
+}*/
+
+
+  .card-login {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid var(--bg-color);
+  }
+  .card-login .form-box{
+      width: 100%;
+      padding: 40PX;
+      
+  
+  }
+  .form-box h2 {
+      font-size: 2em;
+      color: var(--bg-color); 
+      text-align: center;
+  }
+  .input-box{
+      position: relative;
+      width: 100%;
+      height: 50px;
+     border-bottom: 2px solid #eff2f5;
+     margin: 30px 0;
+  
+  }
+  .input-box label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      font-size: 1em;
+      color: var(--bg-color);
+      pointer-events: none;
+      transition: .5s;
+  }
+  .input-box input{
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      font-weight: 300;
+      color: var(--bg-color);
+      padding: 0 35px 0 1px;
+  
+  }
+  .input-box .icon{
+      position: absolute;
+      right: 8px;
+      font-size: 1.2em;
+      color: var(--title-color);
+      line-height: 57px;
+  }
+  
+
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+      top: -5px; 
+      color: var(--bg-color); 
+      font-size: 0.85em; 
+  }
+  
+  
+  .input-box input:focus {
+      border: 2px solid #f5f7fa; /* Borda quando focado */
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Glow neon */
+  }
+  .remember{
+      font-size: .9em;
+  
+      color: var(--bg-color);
+      font-weight: 500;
+      margin: 15px 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     
+  }
+  .remember label input{
+      accent-color: var(--bg-color);
+      margin-right: 3px ;
+  
+  }
+
+  .btn{
+      border: none;
+      background: var(--color-gradient-light);
+      color: var(--bg-colo);
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 280px;
+      transition: transform 0.3s ease;
+  
+  }
+  .btn:hover{
+      transform: scale(1.05);
+  }
+  .login-registeter{
+      font-size: .9em;
+      color: text;
+      text-align: center;
+      font-weight: 500;
+      margin: 25px 0 10px;
+  
+  }
+  
+  .login-registeter p a {
+      color: var(--bg-color);
+      font-size: .9em;
+      font-weight: 600;
+      margin:2px;
+      justify-content: space-between;
+      text-decoration: none;
+  
+  }
+  .login-registeter p a:hover{
+      text-decoration: underline;
+  }
+
+/* Overlay inicialmente oculto */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Escurecimento com 50% de opacidade */
+  opacity: 0;
+  pointer-events: none; /* Desativa interações quando oculto */
+  transition: opacity 0.4s ease;
+  z-index: 999; /* Abaixo do popup, mas acima do conteúdo da página */
+}
+
+/* Ativa o overlay */
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto; /* Ativa interações para capturar cliques */
+}
+
+
+
+.mat-dialog-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.gps-alert-box {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-top-left {
+  position: absolute;
+  top: -44px;
+  left: -20px;
+  width: 43px;
+  height: auto;
+}
+
+.icon-bottom-right {
+  position: absolute;
+  bottom: -33px;
+  right: -17px;
+  width: 43px; 
+  height: auto; 
+}
+
+.text-center {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+
+/* Oculta o popup inicialmente 
+.popup-hidden {
+  display: none;
+ 
+}*/
+

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const overlay = document.getElementById('overlay');
     const dropdowns = document.querySelectorAll(".dropdown_Usuarios");
-    const closeButton = document.getElementById('closePopupBtnRegister'); // Referência para o botão de fechar ("Skip")
+    const closeButton = document.getElementById('closePopupBtnRegister');
 
     // Função para abrir o modal
     function openModal(modal) {
@@ -18,7 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
             overlay.classList.remove('active');  // Torna o overlay invisível se não houver modais ativos
         }
     }
-    
+
+    // Fecha o modal ao clicar no overlay
+    overlay.addEventListener('click', function() {
+        const activeModal = document.querySelector('.modal.active');
+        if (activeModal) {
+            closeModal(activeModal);
+        }
+    });
 
     // Função para alternar a exibição do submenu
     function toggleDropdown(event, dropdownId) {
@@ -79,25 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Fecha dropdowns e modais ao clicar fora
-    function closeOnClickOutside() {
-        document.addEventListener("click", function(event) {
-            const isClickInsideModal = event.target.closest('.modal') !== null || event.target.closest('#overlay') !== null;
-            const isClickInsideNav = event.target.closest(".nav__links") !== null;
-
-            if (!isClickInsideModal && !isClickInsideNav) {
-                dropdowns.forEach(menu => menu.style.display = "none");
-                const activeModal = document.querySelector('.modal.active');
-                if (activeModal) {
-                    closeModal(activeModal);  // Fecha o modal se for clicado fora
-                }
-                overlay.classList.remove('active');
-            }
-        });
-    }
-
     // Inicializa as funções
     addDropdownEventListeners();
-    closeOnClickOutside();
     setupModalButton();
 });
