@@ -1,7 +1,13 @@
 # Projeto de Sistema Web com Menu Interativo, CRUD e Modal
 
+---
+
+**Nota:** Este vídeo mostra as funcionalidades completas de cadastro, busca, exclusão e listagem de usuários, produtos e pedidos, interagindo com a interface do sistema.
+
+
 [**Vídeo com todas as funcionalidaes e animacoes**](https://youtu.be/BRpZexAwfQc) 
 
+---
 ## Landing Page
 
 ![Screenshot 2024-11-11 210110](https://github.com/user-attachments/assets/70ab00fa-d91c-4cf6-95b9-a23182b007d7)
@@ -89,17 +95,8 @@ A tela de menu é composta por uma barra de navegação superior, que contém li
 - **Excluir**: Exclui um pedido existente, removendo-o do sistema.
 - **Listar**: Exibe todos os pedidos feitos pelos usuários.
 
----
 
-## Demonstração
 
-Aqui está um vídeo demonstrando as funcionalidades do sistema:
-
-[**Vídeo Demonstrativo**](#) 
-
-**Nota:** Este vídeo mostra as funcionalidades completas de cadastro, busca, exclusão e listagem de usuários, produtos e pedidos, interagindo com a interface do sistema.
-
----
 
 ## Considerações Finais
 
