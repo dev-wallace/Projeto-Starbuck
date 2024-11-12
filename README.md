@@ -1,5 +1,7 @@
 # Projeto de Sistema Web com Menu Interativo, CRUD e Modal
 
+[**Vídeo com todas as funcionalidaes e animacoes **](https://youtu.be/BRpZexAwfQc) 
+
 ## Landing Page
 
 ![Screenshot 2024-11-11 210110](https://github.com/user-attachments/assets/70ab00fa-d91c-4cf6-95b9-a23182b007d7)
@@ -114,4 +116,7 @@ Este sistema web foi desenvolvido para facilitar o gerenciamento de **Usuários*
 - A interface é responsiva e se adapta a diferentes tamanhos de tela, garantindo que o sistema funcione em desktops, tablets e dispositivos móveis.
 - A funcionalidade de **CRUD** é fundamental para que os administradores do sistema possam gerenciar os dados de forma eficiente.
 
-Este projeto pode ser expandido com funcionalidades adicionais, como **autenticação de usuários**, **controle de acesso** e **edição de registros**, proporcionando uma experiência ainda mais completa.
+## pasta e arquivos 
+
+![Screenshot 2024-11-11 214330](https://github.com/user-attachments/assets/0bf43274-7611-492e-9c96-87c311e75262)
+
