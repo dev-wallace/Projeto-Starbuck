@@ -1,6 +1,6 @@
 # Projeto de Sistema Web com Menu Interativo, CRUD e Modal
 
-[**Vídeo com todas as funcionalidaes e animacoes **](https://youtu.be/BRpZexAwfQc) 
+[**Vídeo com todas as funcionalidaes e animacoes**](https://youtu.be/BRpZexAwfQc) 
 
 ## Landing Page
 
