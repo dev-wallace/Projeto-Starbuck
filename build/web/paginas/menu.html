@@ -31,6 +31,9 @@
                            
                             <li class="nav__link__drop"><a data-modal="locationPopupListar">Listar</a></li>
 
+
+                            <li class="nav__link__drop"><a data-modal="locationPopupAlterar">Alterar</a></li>
+
                           </ul>
                     </li>
                     
@@ -44,6 +47,8 @@
 
                            
                             <li class="nav__link__drop"><a data-modal="produtoListar">Listar</a></li>
+
+                            <li class="nav__link__drop"><a data-modal="produtoAlterar">Alterar</a></li>
                           </ul>
                     </li>
 
@@ -57,6 +62,10 @@
 
                            
                             <li class="nav__link__drop"><a data-modal="pedidosListar">Listar</a></li>
+
+                            <li class="nav__link__drop"><a data-modal="pedidosAlterar">Alterar</a></li>
+
+                            
                           </ul>
                     </li>
 
@@ -257,6 +266,62 @@
         </div>
     </div>
 
+    
+    <div class="cdk-overlay-pane modal" id="locationPopupAlterar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Alterar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/alterar.jsp" method="post" id="registerForm"> 
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="id_cliente" required>
+                            <label for="usuario">ID Cliente</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                            <input type="text" id="id" name="nome_usuario" required>
+                            <label for="name">Nome Usuario</label>
+                        </div>
+
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="nome" required>
+                            <label for="usuario">Nome</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="senha" required>
+                            <label for="senha">Senha</label>
+                        </div>
+
+
+                        <button type="submit" class="btn">Alterar</button>
+        
+                       
+                    </form>
+                </div>
+
+
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="cdk-overlay-pane modal" id="produtoRegister">
         <div class="mat-dialog-container">
@@ -273,19 +338,19 @@
                         <div class="input-box">
                             <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
                             <input type="text" id="name" name="name" required>
-                            <label for="name">Name</label>
+                            <label for="name">Nome</label>
                         </div>
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
                             <input type="text" id="usuario" name="user" required>
-                            <label for="usuario">Preco</label>
+                            <label for="usuario">Preco unidade </label>
                         </div>
                         
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
                             <input type="text" id="senha" name="password" required>
-                            <label for="senha">Preco unidade</label>
+                            <label for="senha">Categoria</label>
                         </div>
 
                         
@@ -401,6 +466,60 @@
             </div>
         </div>
     </div>
+
+    <div class="cdk-overlay-pane modal" id="produtoAlterar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Alterar</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/alterar_produto.jsp" method="post" id="produtoAlterar"> 
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="id_cliente" required>
+                            <label for="usuario">ID Produto</label>
+                        </div>
+            
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                            <input type="text" id="id" name="nome_usuario" required>
+                            <label for="name">Nome</label>
+                        </div>
+            
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="nome" required>
+                            <label for="usuario">Preco unidade</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="senha" required>
+                            <label for="senha">Categoria</label>
+                        </div>
+            
+            
+                        <button type="submit" class="btn">Alterar</button>
+            
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
     
 
     <div class="cdk-overlay-pane modal" id="pedidosRegister">
@@ -531,6 +650,59 @@
                         
                         <button type="submit" class="btn">Listar Pedido</button>
         
+                       
+                    </form>
+                </div>
+                <div class="close">
+                    <button type="button" class="close-btn" id="closePopupBtnRegister">Skip</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cdk-overlay-pane modal" id="pedidosAlterar">
+        <div class="mat-dialog-container">
+            <div class="gps-alert-box">
+                <!-- Ícones decorativos fixos nos cantos -->
+                <img src="../Group 566.svg" alt="Estrela" class="icon-top-left">
+                <img src="../Group45.svg" alt="Flor" class="icon-bottom-right">
+                <div class="form-box">
+                    <h2>Pedido</h2>
+                </div>
+                
+                <div class="card-remove-wrapper2">
+                    <form action="../jsp/alterar_pedido.jsp" method="post" id="pedidosAlterar"> 
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="id_cliente" required>
+                            <label for="usuario">ID Pedido</label>
+                        </div>
+            
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="name"><i class="fa-solid fa-user"></i></ion-icon></span>
+                            <input type="date" id="id" name="nome_usuario" required>
+                            <label for="name">Data Pedido</label>
+                        </div>
+            
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"><i class="fa-solid fa-ghost"></i></ion-icon></span>
+                            <input type="text" id="usuario" name="nome" required>
+                            <label for="usuario">Valor Pedido</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"><i class="fa-solid fa-lock"></i></ion-icon></span>
+                            <input type="text" id="senha" name="senha" required>
+                            <label for="senha">Descricao</label>
+                        </div>
+            
+            
+                        <button type="submit" class="btn">Alterar</button>
+            
                        
                     </form>
                 </div>
